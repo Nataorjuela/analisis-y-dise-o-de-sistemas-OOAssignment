@@ -1,13 +1,14 @@
 package arsw.app;
 
 /**
- * Hello world!
+ *
  *
  */
-public class App 
+public class LinkedList
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        String cabeza="";
+        String cola=null;
     }
 }
