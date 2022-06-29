@@ -2,35 +2,25 @@ package arsw.app.lista;
 
 import java.util.Iterator;
 
-/**
- *
- *
- */
 public class MyLinkedList<E> implements Iterable {
 
-        private Nodo<E> cabeza=new Nodo<E>(null);
-        private Nodo<E> cola=new Nodo<E>(null);
-        private int size = 0;
+    private Nodo<E> head = new Nodo<E>(null);
+    private int size = 0;
 
-
-    public void add(E Nodo){
-        Nodo<E> nuevo = new Nodo<E>(Nodo);
+    public boolean add(E Nodo) {
+        Nodo<E> actual = new Nodo<E>(Nodo);
         if (size == 0) {
-            cabeza.setPrevious(nuevo);
-            cola.setNext(nuevo);
+            head.setPrior(actual);
+            head.setNext(actual);
+        } else {
+            head.getNext().setNext(actual);
+            head.setNext(actual);
         }
-
-        else {
-            cola.setNext(nuevo);
-            cola=nuevo;
-        }
-        size+=1;
+        size++;
+        return true;
     }
-    /**
-     * Obtiene el elemento dentro de la LinkedList.
-     * @param index El indice que indica la posición del elemento que se quiere obtener.
-     * @return Dato del nodo
-     */
+
+
     public E get(int index) {
         if (index < 0 || index < size) {
             int pos = 0;
@@ -45,17 +35,12 @@ public class MyLinkedList<E> implements Iterable {
         }
     }
 
-    /**
-     * Obtiene el tamaño que tiene la linkedList.
-     * @return El tamaño que tiene la linkedList.
-     */
     public int getSize() {
         return size;
     }
 
-
     public Iterator<E> iterator()
     {
-        return new Iterador<E>(cabeza.getPrevious());
+        return new Iterador<E>(head.getPrior());
     }
 }
