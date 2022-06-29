@@ -1,4 +1,4 @@
-package arsw.app.app;
+package arsw.app;
 import arsw.app.lista.MyLinkedList;
 
 

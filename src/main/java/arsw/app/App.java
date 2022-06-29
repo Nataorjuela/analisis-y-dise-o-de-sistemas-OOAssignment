@@ -1,10 +1,11 @@
-package arsw.app.app;
+package arsw.app;
 
 import arsw.app.lista.MyLinkedList;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.text.DecimalFormat;
+
 
 public class App
 {

@@ -1,5 +1,5 @@
 arsw\app\lista\Iterador.class
+arsw\app\App.class
 arsw\app\lista\MyLinkedList.class
-arsw\app\app\Calculadora.class
+arsw\app\Calculadora.class
 arsw\app\lista\Nodo.class
-arsw\app\app\App.class
