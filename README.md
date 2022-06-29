@@ -13,5 +13,11 @@ columnas de la Tabla 1. Los resultados previstos figuran en el cuadro 2.
 ![image](https://user-images.githubusercontent.com/54339107/172902437-86281142-de84-447c-8b2c-28d5a6fcb3b3.png)
 
 cada columna va en un archivo diferente:warning:
+## Ejecución 
+~~~
+java -cp "./target/classes" arsw.app.App
+~~~
+___
+## Test
 
-
+![image](https://user-images.githubusercontent.com/54339107/176559089-aba65608-9de9-4468-9135-24630d8ffd6f.png)
